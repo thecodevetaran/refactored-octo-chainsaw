@@ -68,3 +68,11 @@ dependencies {
     implementation(libs.androidx.tv.material)
     implementation(libs.kotlinx.coroutines.android)
 }
+
+configurations.all {
+    resolutionStrategy.eachDependency {
+        if (requested.group == "org.jetbrains.kotlinx" && requested.name.startsWith("kotlinx-coroutines")) {
+            useVersion(libs.versions.coroutines.get())
+        }
+    }
+}
