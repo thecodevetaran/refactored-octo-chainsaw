@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <!-- Deep obsidian background -->
+    <path android:pathData="M0,0h320v180h-320z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="320"
+                android:endY="180"
+                android:startX="0"
+                android:startY="0"
+                android:type="linear">
+                <item android:color="#FF06080D" android:offset="0.0" />
+                <item android:color="#FF0F172A" android:offset="0.55" />
+                <item android:color="#FF160E29" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Subtle electric blue geometric ring -->
+    <path
+        android:pathData="M160,90m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"
+        android:strokeWidth="2.5"
+        android:strokeColor="#8038BDF8" />
+
+    <path
+        android:pathData="M160,90m-34,0a34,34 0,1 1,68 0a34,34 0,1 1,-68 0"
+        android:strokeWidth="1.2"
+        android:strokeColor="#60A855F7" />
+
+    <!-- Stylized N-Core Nexus Emblem -->
+    <path
+        android:fillColor="#FF38BDF8"
+        android:pathData="M144,108 L144,72 L150,72 L170,97 L170,72 L176,72 L176,108 L170,108 L150,83 L150,108 Z" />
+
+    <!-- Accent horizontal telemetry bars -->
+    <path
+        android:fillColor="#9938BDF8"
+        android:pathData="M36,88h56v2h-56z" />
+    <path
+        android:fillColor="#99A855F7"
+        android:pathData="M228,88h56v2h-56z" />
+</vector>
